@@ -9,11 +9,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}{{ pypi_build }}.tar.gz
   sha256: 0665f65580b48837ec3fdc0208624026bfcd30ceca720ee87c3574f76a650f7e
-  patches:
-    - conda.patch
 
 build:
-  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
