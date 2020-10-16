@@ -1,6 +1,6 @@
 {% set name = "py-pandoc" %}
-{% set version = "2.9.2.1.1" %}
-{% set dep_ver = "2.9.2.1" %}
+{% set version = "2.9.2.0.2" %}
+{% set dep_ver = "2.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1f07f916401f6a4329a32a8689ad37c75e5f4541dd926d57d3f19ece5612f3af
+  sha256: adec5f4f4c6be85f5c715642c128ecfbfcd9625131667bb27b4655e04aef4e6b
   patches:
     - conda.patch
 
@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/kiwi0fruit/py-pandoc
-  license: GPLv2+
+  license: GPL-2.0-only
   license_family: GPL
   license_file: LICENSE
   summary: Installs pandoc conda package in pip and conda.
